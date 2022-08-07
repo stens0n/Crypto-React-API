@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 import './App.css';
+
 import Coin from './coin'
 
 
@@ -30,15 +31,26 @@ function App() {
   return (
     <div className="coin-app">
       <div className="coin-search">
-        <h1 className="coin-text">Search a currency</h1>
+        <h1 className="coin-text">Crypto Currency Search</h1>
+        <h5>Powered by Anthony Stenson</h5>
+        <br></br>
         <form>
-          <input type="text" placeholder='Search' className="coins-input" onChange={handleChange} />
+          <input type="text" placeholder='Search' className="coin-input" onChange={handleChange} />
         </form>
       </div>
       {filteredCoins.map(coin => {
         return (
-          <Coin key={coin.id} name={coin.name} image={coin.image} />
-        )
+          <Coin 
+          key={coin.id} 
+          name={coin.name} 
+          image={coin.image}
+          symbol={coin.symbol}
+          marketcap={coin.market_cap}
+          price={coin.current_price}
+          priceChange={coin.price_change_percentage_24h}
+          volume={coin.total_volume}
+          />
+        );
       })}
     </div>
   );
