@@ -5,7 +5,7 @@
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
-  background-color: rgba(16, 16, 34, 0.8);
+  background-color: #1a1a1c;
   color: #fff;
 }
 
@@ -13,12 +13,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 64px;
+  margin-top: 32px;
   color: #fff;
 }
 
 .coin-search {
-  margin-bottom: 64px;
+  
   display: flex;
   flex-direction: column;
   justify-content: center;

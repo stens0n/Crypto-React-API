@@ -28,10 +28,11 @@
 .coin img {
     height: 30px;
     width: 30px; 
-    margin-right: 10px;
+    margin-right: 25.55px;
 }
 
 .coin-symbol{ 
+    margin-left: 25.55px;
     text-transform: uppercase;
 }
 
@@ -43,19 +44,23 @@
 }
 
 .coin-price { 
+    margin-top: 20px;
     width: 110px;
 }
 
 .coin-volume { 
+    margin-top: 20px;
     width: 200px;
 }
 
 .coin-marketcap { 
+    margin-top: 20px;
     width: 240px;
 }
 
 
 .coin-percent { 
+    margin-top: 20px;
     width: 80px;
 }
 
